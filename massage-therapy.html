@@ -115,6 +115,15 @@
   .btn-white { background:white; color:var(--sage-dark); padding:13px 32px; border-radius:2px; font-size:11px; letter-spacing:2px; text-transform:uppercase; font-weight:500; text-decoration:none; display:inline-block; transition:background 0.3s; }
   .btn-white:hover { background:var(--cream); }
 
+  /* PRACTITIONER */
+  .practitioner { padding:90px 60px; border-top:1px solid var(--light-gray); }
+  .practitioner .page-hero-eyebrow { margin-bottom:16px; }
+  .practitioner-title { font-family:'Cormorant Garamond',serif; font-size:clamp(28px,3vw,42px); font-weight:300; color:var(--charcoal); margin-bottom:44px; }
+  .practitioner-title em { font-style:normal; color:var(--sage); font-size:0.46em; letter-spacing:2px; text-transform:uppercase; vertical-align:middle; margin-left:6px; }
+  .practitioner-grid { display:grid; grid-template-columns:1.1fr 1fr; gap:80px; align-items:start; }
+  .practitioner-bio p { font-size:15px; font-weight:300; line-height:1.85; color:var(--mid); margin-bottom:20px; }
+  .practitioner-bio .btn-primary { margin-top:16px; }
+
   /* OTHER SERVICES */
   .other-services { padding:80px 60px; background:var(--cream); }
   .other-services h2 { font-family:'Cormorant Garamond',serif; font-size:36px; font-weight:300; color:var(--charcoal); margin-bottom:40px; }
@@ -154,6 +163,8 @@
     .hamburger { display:flex; }
     .page-hero { padding:110px 32px 60px; }
     .service-content { padding:60px 32px; grid-template-columns:1fr; gap:40px; }
+    .practitioner { padding:60px 32px; }
+    .practitioner-grid { grid-template-columns:1fr; gap:40px; }
     .other-services { padding:60px 32px; }
     .services-row { grid-template-columns:repeat(2,1fr); }
     .nap-block { padding:24px 32px; gap:24px; }
@@ -166,6 +177,7 @@
     .page-hero { padding:96px 20px 50px; }
     .page-hero::before, .page-hero::after { display:none; }
     .service-content { padding:50px 20px; }
+    .practitioner { padding:50px 20px; }
     .other-services { padding:50px 20px; }
     .services-row { grid-template-columns:1fr; }
     .nap-block { padding:20px; gap:16px; flex-direction:column; align-items:flex-start; text-align:left; }
@@ -233,6 +245,29 @@
       <h3>Ready to Feel Better?</h3>
       <p>New patients always welcome. No referral needed. Book your first appointment with Dr. Shorts today.</p>
       <a href="https://shortschiro.janeapp.com/" class="btn-white">Book Online</a>
+    </div>
+  </div>
+</section>
+
+<section class="practitioner">
+  <p class="page-hero-eyebrow">Meet Your Massage Therapist</p>
+  <h2 class="practitioner-title">Patrick Cislo<em>LMT, BCTMB</em></h2>
+  <div class="practitioner-grid">
+    <div class="practitioner-bio">
+      <p>Massage at Chirofit is led by Patrick Cislo, a Licensed Massage Therapist and NASM Certified Personal Trainer who treats bodywork as the bridge between clinical recovery and athletic longevity. His practice blends Eastern and Western philosophies — time-tested holistic principles paired with modern, evidence-based technique — to release deep-seated tension and restore alignment.</p>
+      <p>That understanding of the body isn't only academic. With a background in Jiu-Jitsu and powerlifting, Patrick knows firsthand the demands of high-impact sport and the value of proactive recovery. Whether you're rehabbing an injury, easing chronic tension, or fine-tuning performance, his goal is the same — to help you move better, find relief from pain, and keep the mobility to stay active.</p>
+      <a href="https://shortschiro.janeapp.com/" class="btn-primary">Book a Massage</a>
+    </div>
+    <div class="practitioner-side">
+      <div class="sidebar-card">
+        <h3>Massage Modalities</h3>
+        <ul class="sidebar-list">
+          <li>Trigger Point &amp; Myofascial Release</li>
+          <li>Deep Tissue &amp; Tool-Assisted Therapy</li>
+          <li>Cupping Therapy</li>
+          <li>Sports &amp; Recovery Massage</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
